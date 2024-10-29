@@ -54,7 +54,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <19 20 21 22>;
+            key-positions = <19 16>;
         };
     };
 
@@ -69,10 +69,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BSPC | RSE |
 
             bindings = <
-&kp GRAVE     &kp Q           &kp W           &kp E        &kp R             &ht RA(T) T  &kp Y      &kp U             &kp I              &kp O           &kp P                   &kp LBKT
-&kp TAB       &ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht LEFT_SHIFT J  &ht LCTRL K        &ht LEFT_ALT L  &ht LEFT_WIN SEMICOLON  &kp SQT
-&kp CAPSLOCK  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N      &ht RA(M) M       &kp RIGHT_BRACKET  &kp SLASH       &kp COMMA               &kp PERIOD
-                                              &kp ESCAPE   &mo 2             &kp SPACE    &kp ENTER  &mo 1             &kp BACKSPACE
+&kp GRAVE  &kp Q           &kp W           &kp E        &kp R             &ht RA(T) T  &kp Y      &kp U             &kp I              &kp O           &kp P                   &kp LBKT
+&kp TAB    &ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht LEFT_SHIFT J  &ht LCTRL K        &ht LEFT_ALT L  &ht LEFT_WIN SEMICOLON  &kp SQT
+&none      &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N      &ht RA(M) M       &kp RIGHT_BRACKET  &kp SLASH       &kp COMMA               &kp PERIOD
+                                           &kp ESCAPE   &mo 2             &kp SPACE    &kp ENTER  &mo 1             &kp BACKSPACE
             >;
         };
 
