@@ -8,25 +8,22 @@
 
 / {
     behaviors {
-        caps_lock_toggle_on: behavior {
+        caps_lock_enable: behavior {
             compatible = "zmk,behavior-macro";
-            label = "Caps Lock Toggle On";
+            label = "Caps Lock Enable";
             bindings = <&kp CAPS>;
             #binding-cells = <0>;
-            // включит Caps Lock, если он выключен
-            macro-enable-when-disabled = <CAPS>;
         };
 
-        caps_lock_toggle_off: behavior {
+        caps_lock_disable: behavior {
             compatible = "zmk,behavior-macro";
-            label = "Caps Lock Toggle Off";
+            label = "Caps Lock Disable";
             bindings = <&kp CAPS>;
             #binding-cells = <0>;
-            // отключит Caps Lock, если он включен
-            macro-disable-when-enabled = <CAPS>;
         };
     };
 };
+
 
 
 / {
