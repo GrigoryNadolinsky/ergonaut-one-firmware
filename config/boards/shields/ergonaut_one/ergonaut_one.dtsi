@@ -6,25 +6,6 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-/ {
-    behaviors {
-        caps_lock_enable: behavior {
-            compatible = "zmk,behavior-macro";
-            label = "Caps Lock Enable";
-            bindings = <&kp CAPS>;
-            #binding-cells = <0>;
-        };
-
-        caps_lock_disable: behavior {
-            compatible = "zmk,behavior-macro";
-            label = "Caps Lock Disable";
-            bindings = <&kp CAPS>;
-            #binding-cells = <0>;
-        };
-    };
-};
-
-
 
 / {
     chosen {
