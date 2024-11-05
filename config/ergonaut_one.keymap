@@ -54,7 +54,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <19 16>;
+            key-positions = <19 16 15 20>;
         };
     };
 
