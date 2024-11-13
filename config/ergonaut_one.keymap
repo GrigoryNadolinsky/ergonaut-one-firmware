@@ -47,6 +47,14 @@
             label = "BRIGHTNESS_UP";
             wait-ms = <1>;
         };
+
+        number_1: number_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_1 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_1";
+            wait-ms = <1>;
+        };
     };
 
     combos {
