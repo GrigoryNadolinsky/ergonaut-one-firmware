@@ -56,7 +56,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_2 {
+        number_2: number_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_2 &kp LA(LEFT_SHIFT)>;
@@ -64,7 +64,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_3 {
+        number_3: number_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_3 &kp LA(LEFT_SHIFT)>;
@@ -72,7 +72,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_4 {
+        number_4: number_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_4 &kp LA(LEFT_SHIFT)>;
@@ -80,7 +80,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_5 {
+        number_5: number_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_5 &kp LA(LEFT_SHIFT)>;
@@ -88,7 +88,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_6 {
+        number_6: number_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_6 &kp LA(LEFT_SHIFT)>;
@@ -96,7 +96,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_7 {
+        number_7: number_7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_7 &kp LA(LEFT_SHIFT)>;
@@ -104,7 +104,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_8 {
+        number_8: number_8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_8 &kp LA(LEFT_SHIFT)>;
@@ -112,7 +112,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_9 {
+        number_9: number_9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_9 &kp LA(LEFT_SHIFT)>;
@@ -120,7 +120,7 @@
             wait-ms = <1>;
         };
 
-        number_1: number_0 {
+        number_0: number_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_0 &kp LA(LEFT_SHIFT)>;
