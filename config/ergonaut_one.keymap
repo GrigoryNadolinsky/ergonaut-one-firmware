@@ -55,6 +55,78 @@
             label = "NUMBER_1";
             wait-ms = <1>;
         };
+
+        number_1: number_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_2 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_2";
+            wait-ms = <1>;
+        };
+
+        number_1: number_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_3 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_3";
+            wait-ms = <1>;
+        };
+
+        number_1: number_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_4 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_4";
+            wait-ms = <1>;
+        };
+
+        number_1: number_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_5 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_5";
+            wait-ms = <1>;
+        };
+
+        number_1: number_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_6 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_6";
+            wait-ms = <1>;
+        };
+
+        number_1: number_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_7 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_7";
+            wait-ms = <1>;
+        };
+
+        number_1: number_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_8 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_8";
+            wait-ms = <1>;
+        };
+
+        number_1: number_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_9 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_9";
+            wait-ms = <1>;
+        };
+
+        number_1: number_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_0 &kp LA(LEFT_SHIFT)>;
+            label = "NUMBER_0";
+            wait-ms = <1>;
+        };
     };
 
     combos {
