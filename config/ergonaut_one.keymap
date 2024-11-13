@@ -51,7 +51,7 @@
         number_1: number_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_SHIFT) &kp NUMBER_1 &kp LA(LEFT_SHIFT)>;
+            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_1 &kp LA(LEFT_SHIFT)>;
             label = "NUMBER_1";
             wait-ms = <1>;
         };
