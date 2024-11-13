@@ -51,7 +51,7 @@
         number_1: number_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_1 &kp LS(LEFT_ALT)>;
+            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_1 &kp LS(LCTRL)>;
             label = "NUMBER_1";
             wait-ms = <1>;
         };
@@ -59,7 +59,7 @@
         number_2: number_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_2 &kp LS(LEFT_ALT)>;
+            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_2 &kp LS(LCTRL)>;
             label = "NUMBER_2";
             wait-ms = <1>;
         };
@@ -67,7 +67,7 @@
         number_3: number_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_3 &kp LS(LEFT_ALT)>;
+            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_3 &kp LS(LCTRL)>;
             label = "NUMBER_3";
             wait-ms = <1>;
         };
@@ -75,7 +75,7 @@
         number_4: number_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_4 &kp LS(LEFT_ALT)>;
+            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_4 &kp LS(LCTRL)>;
             label = "NUMBER_4";
             wait-ms = <1>;
         };
