@@ -203,10 +203,10 @@
 
         layer_4 {
             bindings = <
-&trans          &trans        &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &bt BT_SEL 0  &trans  &trans  &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans  &none   &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans  &trans       &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &none   &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans  &trans       &trans  &trans  &trans  &trans
             >;
         };
     };
