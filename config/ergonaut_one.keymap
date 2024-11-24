@@ -31,112 +31,9 @@
             label = "SLEEP_MACRO";
             wait-ms = <300>;
         };
-
-        BRIGHTNESS_DOWN: BRIGHTNESS_DOWN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_DEC>;
-            label = "BRIGHTNESS_DOWN";
-            wait-ms = <1>;
-        };
-
-        BRIGHTNESS_UP: BRIGHTNESS_UP {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_INC>;
-            label = "BRIGHTNESS_UP";
-            wait-ms = <1>;
-        };
-
-        number_1: number_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_1 &kp LS(LCTRL)>;
-            label = "NUMBER_1";
-            wait-ms = <1>;
-        };
-
-        number_2: number_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_2 &kp LS(LCTRL)>;
-            label = "NUMBER_2";
-            wait-ms = <1>;
-        };
-
-        number_3: number_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_3 &kp LS(LCTRL)>;
-            label = "NUMBER_3";
-            wait-ms = <1>;
-        };
-
-        number_4: number_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_4 &kp LS(LCTRL)>;
-            label = "NUMBER_4";
-            wait-ms = <1>;
-        };
-
-        number_5: number_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_5 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_5";
-            wait-ms = <1>;
-        };
-
-        number_6: number_6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_6 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_6";
-            wait-ms = <1>;
-        };
-
-        number_7: number_7 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_7 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_7";
-            wait-ms = <1>;
-        };
-
-        number_8: number_8 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_8 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_8";
-            wait-ms = <1>;
-        };
-
-        number_9: number_9 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_9 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_9";
-            wait-ms = <1>;
-        };
-
-        number_0: number_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &kp NUMBER_0 &kp LS(LEFT_ALT)>;
-            label = "NUMBER_0";
-            wait-ms = <1>;
-        };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <19 16 15 20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -149,10 +46,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BSPC | RSE |
 
             bindings = <
-&kp GRAVE     &kp Q           &kp W           &kp E        &kp R             &ht RA(T) T  &kp Y      &kp U             &ht RA(I) I    &kp O           &kp P                   &kp RA(I)
-&kp TAB       &ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht LEFT_SHIFT J  &ht LCTRL K    &ht LEFT_ALT L  &ht LEFT_WIN SEMICOLON  &kp LEFT_BRACKET
-&kp CAPSLOCK  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N      &ht RA(M) M       &kp COMMA      &kp PERIOD      &kp SLASH               &kp RIGHT_BRACKET
-                                              &kp ESCAPE   &mo 2             &kp SPACE    &kp ENTER  &mo 1             &kp BACKSPACE
+&none                     &kp Q           &kp W           &kp E        &kp R             &ht RA(T) T  &kp Y      &kp U             &ht RA(I) I    &kp O           &kp P                   &none
+&ht RA(NUMBER_2) RA(DOT)  &ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht LEFT_SHIFT J  &ht LCTRL K    &ht LEFT_ALT L  &ht LEFT_WIN SEMICOLON  &kp RA(COMMA)
+&none                     &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N      &ht RA(M) M       &kp COMMA      &kp PERIOD      &kp SLASH               &none
+                                                          &kp ESCAPE   &mo 2             &kp SPACE    &kp ENTER  &mo 1             &kp BACKSPACE
             >;
         };
 
@@ -164,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP    &kp PLUS      &kp NUMBER_7             &kp NUMBER_8        &kp NUMBER_9           &kp KP_MULTIPLY         &trans
-&trans  &ht LEFT_WIN TAB  &ht LEFT_ALT LEFT  &ht LCTRL DOWN  &ht LEFT_SHIFT RIGHT  &kp PAGE_DOWN  &kp KP_MINUS  &ht LEFT_SHIFT NUMBER_4  &ht RCTRL NUMBER_5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN KP_DIVIDE  &trans
-&trans  &kp END           &kp LS(LC(LEFT))   &trans          &kp LS(LC(RIGHT))     &kp INSERT     &kp EQUAL     &kp NUMBER_1             &kp NUMBER_2        &kp NUMBER_3           &kp N0                  &trans
-                                             &trans          &mo 3                 &trans         &trans        &mo 3                    &trans
+&none  &kp HOME          &kp LC(LEFT)       &kp UP_ARROW    &kp LC(RIGHT)         &kp PAGE_UP    &kp PLUS      &kp NUMBER_7             &kp NUMBER_8        &kp NUMBER_9           &kp KP_MULTIPLY         &none
+&none  &ht LEFT_WIN TAB  &ht LEFT_ALT LEFT  &ht LCTRL DOWN  &ht LEFT_SHIFT RIGHT  &kp PAGE_DOWN  &kp KP_MINUS  &ht LEFT_SHIFT NUMBER_4  &ht RCTRL NUMBER_5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN KP_DIVIDE  &none
+&none  &kp END           &kp LS(LC(LEFT))   &trans          &kp LS(LC(RIGHT))     &kp INSERT     &kp EQUAL     &kp NUMBER_1             &kp NUMBER_2        &kp NUMBER_3           &kp N0                  &none
+                                            &trans          &mo 3                 &trans         &trans        &mo 3                    &trans
             >;
         };
 
@@ -179,10 +76,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&none          &kp LS(GRAVE)      &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp RS(BACKSLASH)  &kp RA(PERIOD)      &kp RA(SLASH)      &kp LS(RIGHT_BRACKET)  &kp GRAVE      &none
-&kp LS(N5)     &kp BACKSLASH      &kp LS(NUMBER_8)  &kp MINUS         &kp LS(EQUAL)     &kp EQUAL         &kp RA(COMMA)      &kp LS(NUMBER_9)    &kp LS(NUMBER_0)   &kp LS(LEFT_BRACKET)   &kp LS(GRAVE)  &none
-&kp RA(GRAVE)  &kp RS(RA(COMMA))  &kp RA(MINUS)     &kp LS(NUMBER_1)  &kp LS(NUMBER_7)  &kp RA(RS(SQT))   &kp RS(MINUS)      &kp RA(RS(PERIOD))  &kp RS(RA(SLASH))  &kp RA(O)              &kp RA(P)      &kp RA(NON_US_BACKSLASH)
-                                                    &trans            &mo 3             &trans            &trans             &mo 3               &kp DEL
+&none       &kp RA(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp RA(BACKSLASH)  &kp RA(LEFT_BRACKET)      &kp RA(RIGHT_BRACKET)      &kp RA(LS(SEMICOLON))  &kp RA(SINGLE_QUOTE)      &none
+&kp LS(N5)  &kp BACKSLASH     &kp LS(NUMBER_8)  &kp MINUS         &kp LS(EQUAL)     &kp EQUAL         &kp LS(NUMBER_7)   &kp LS(NUMBER_9)          &kp LS(NUMBER_0)           &kp RA(SEMICOLON)      &kp RA(LS(SINGLE_QUOTE))  &kp LS(BACKSLASH)
+&none       &kp RA(NUMBER_2)  &kp RA(MINUS)     &kp LS(NUMBER_1)  &kp RA(SLASH)     &none             &kp RS(MINUS)      &kp RA(LS(LEFT_BRACKET))  &kp RS(RA(RIGHT_BRACKET))  &kp RA(LS(COMMA))      &kp RA(LS(DOT))           &none
+                                                &none             &mo 3             &none             &trans             &mo 3                     &kp DEL
             >;
         };
 
@@ -194,19 +91,19 @@
             //                          |     |     |     |   |     |     |     |
 
             bindings = <
-&BRIGHTNESS_UP    &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_REWIND  &kp C_FAST_FORWARD
-&BRIGHTNESS_DOWN  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none
-&mo 4             &kp F9  &kp F10  &kp F11  &kp F12  &sleep_macro          &kp C_MUTE         &mkp LCLK       &none             &none         &none         &none
-                                   &trans   &none    &trans                &trans             &none           &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_REWIND  &kp C_FAST_FORWARD
+&mo 4  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &sleep_macro          &kp C_MUTE         &mkp LCLK       &none             &none         &none         &none
+                        &none    &none    &none                 &none              &none           &none
             >;
         };
 
         layer_4 {
             bindings = <
-&trans          &trans        &trans        &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &none   &bootloader  &none   &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans  &trans       &trans  &trans  &trans  &trans
+&none           &none         &none         &none  &none        &none  &none  &none  &none  &none  &none  &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &none  &bootloader  &none  &none  &none  &none  &none  &none  &none
+&none           &none         &none         &none  &none        &none  &none  &none  &none  &none  &none  &none
+                                            &none  &none        &none  &none  &none  &none
             >;
         };
     };
